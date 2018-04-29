@@ -37,7 +37,7 @@
     </target>
 
     <target name="package" depends="build" description="Package a war file">
-        <war destfile="webapps/ROOT.war"
+        <war destfile="${web.dir}/ROOT.war"
              webxml="${web.dir}/WEB-INF/web.xml">
             <fileset dir="${web.dir}">
                 <include name="**/*.*"/>
